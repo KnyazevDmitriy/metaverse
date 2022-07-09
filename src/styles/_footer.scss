@@ -1,0 +1,198 @@
+footer {
+    background-color: $color-black;
+    padding-bottom: 100px;
+
+    .footer {
+        display: flex;
+        gap: 130px;
+
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 470px;
+        
+                .footer-logo {
+                    font-family: 'Urbanist';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 48px;
+                    margin-left: 70px;
+                }
+
+                .footer-logo::before {
+                    position: absolute;
+                    left: 120px;
+                    content: url(../img/footer/footer-logo.svg);
+                }
+
+                .desc {
+                    font-family: 'Urbanist';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $color-lilac;
+                }
+            }
+
+            &__contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .contact {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 70px;
+
+                    .background {
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 50%;
+                        left: -70px;
+                    }
+
+                    .bg-phone::before {
+                        position: absolute;
+                        top: 14px;
+                        left: 14px;
+                        content: url(../img/footer/phone.svg);
+                    }
+
+                    .bg-mail::before {
+                        position: absolute;
+                        top: 14px;
+                        left: 14px;
+                        content: url(../img/footer/mail.svg);
+                    }
+
+                    .bg-address::before {
+                        position: absolute;
+                        top: 14px;
+                        left: 14px;
+                        content: url(../img/footer/MapPin.svg);
+                    }
+
+                    legend {
+                        color: $color-lilac;
+                        font-family: 'Urbanist';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    .link {
+                        font-family: 'Urbanist';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    .link:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+
+            .columns {
+                display: flex;
+                gap: 120px;
+    
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    &__title {
+                        font-family: 'Urbanist';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: $color-white;
+                    }
+
+                    &__lists {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        a {
+                            font-family: 'Urbanist';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: $color-lilac;
+                            transition: all .5s;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                gap: 170px;
+                align-items: center;
+                justify-content: center;
+
+                .socials {
+                    display: flex;
+                    gap: 15px;
+
+                    .link {
+                        width: 50px;
+                        height: 50px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 50%;
+
+                        transition: all .5s;
+
+                        img {
+                            width: 65%;
+                            margin-top: 8px;
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .link:hover {
+                        border: 1px solid $color-gray;
+                    }
+                }
+
+                .rights {
+                    font-family: 'Urbanist';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: $color-lilac;
+                }
+            }
+        }
+    }
+}

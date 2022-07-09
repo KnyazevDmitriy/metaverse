@@ -1,0 +1,110 @@
+.nav_sign-up,
+.nav_sign-in {
+    color: $color-primary-red;
+    padding: 10px 45px;
+    border: 1px solid $color-primary-red;
+    border-radius: 10px;
+}
+
+.nav_sign-up:hover,
+.nav_sign-in:hover {
+    color: rgb(226, 43, 134);
+    border: 1px solid rgb(226, 43, 134);
+    box-shadow: 1px 1px 1px 1px blueviolet;
+}
+
+.explore {
+    padding: 10px 25px;
+    background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    border-radius: 10px;
+    color: $color-black;
+}
+
+.explore:hover {
+    background: linear-gradient(234.84deg, #FD1C68 15.44%, #FDAE8F  85.65%);
+}
+
+.play {
+    padding: 10px 25px 10px 45px;
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+
+.play:hover {
+    color: $color-white;
+    border: 1px solid $color-white;
+}
+
+.play::before {
+    content: url(../img/body/play-icon.svg);
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+.play::after {
+    content: url(../img/body/Vector.svg);
+    position: absolute;
+    right: 17px;
+    top: 11px;
+}
+
+.section-5-btn {
+    padding: 14px 55px;
+    border-radius: 15px;
+
+    background-color: $color-black;
+    color: $color-light-red;
+}
+
+.section-5-btn:hover {
+    color: $color-red;
+}
+
+.section-6-btn,
+.section-6-btn-2 {
+    position: absolute;
+    bottom: 30px;
+
+    padding: 18px 26px;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid $color-black;
+    color: $color-black;
+
+    margin-left: 40px;
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    transition: 1s;
+}
+
+.section-6-btn:hover,
+.section-6-btn-2:hover {
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    background-color: $color-black;
+}
+
+.section-6-btn::after {
+    position: absolute;
+    content: url(../img/body/headphones.svg);
+    left: 155px;
+    top: -5px;
+}
+
+.section-6-btn-2::after {
+    position: absolute;
+    content: url(../img/body/github.svg);
+    left: 155px;
+    top: -9px;
+}
