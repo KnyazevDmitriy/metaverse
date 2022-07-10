@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +42,6 @@
   color: #B2B2B2;
   border-radius: 10px;
   position: relative;
-  z-index: 1;
   transition: 0.3s;
 }
 
@@ -435,7 +435,6 @@ main {
   background-color: black;
   z-index: 1;
   padding-top: 55px;
-  min-width: 320px;
 }
 
 .section-1 {
@@ -839,7 +838,7 @@ main {
   }
   .section-1 .text .buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .section-1 .text .buttons .explore {
     padding: 10px 15px;
@@ -959,7 +958,7 @@ main {
     align-items: center;
   }
   .section-6 .block {
-    width: 300px;
+    max-width: 300px;
   }
   .section-6 .block .text {
     margin: 0 5%;
@@ -1430,4 +1429,471 @@ footer .footer .right-side .bottom .rights {
   font-size: 16px;
   line-height: 18px;
   color: #8393AF;
+}
+
+.modal-1 {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 10;
+  /* Сидеть на вершине */
+  padding-top: 50px;
+  /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0);
+  /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #FC4F4F;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+.modal-header .nav-logo {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 2px 16px;
+  background-color: black;
+}
+.modal-body .text {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.modal-body .text .title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  color: white;
+}
+.modal-body .text .subtitle {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+.modal-body .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modal-body .inputs .input {
+  background-color: #224957;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 13px 13px 13px 13px;
+  width: 300px;
+  height: 40px;
+}
+.modal-body .inputs input::-webkit-input-placeholder {
+  color: #B2B2B2;
+}
+.modal-body .inputs .input:focus-visible {
+  outline: none;
+  border: 1px solid #B2B2B2;
+}
+.modal-body .inputs .checkbox-password {
+  display: flex;
+  gap: 32px;
+}
+.modal-body .inputs .checkbox-password .checkbox {
+  display: flex;
+  gap: 7px;
+}
+.modal-body .inputs .checkbox-password .checkbox label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+.modal-body .inputs .checkbox-password .password {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFE927;
+}
+.modal-body .inputs .checkbox-password .password:hover {
+  color: #ffa127;
+}
+.modal-body .inputs .submit {
+  background: linear-gradient(90.54deg, #FDAE8F -38.38%, #FC4F4F 49.51%, #FF7070 135.35%);
+  border: none;
+  padding: 12px 0px;
+  border-radius: 10px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+}
+.modal-body .inputs .submit:hover {
+  background: linear-gradient(90.54deg, #FC4F4F -38.38%, #FF7070 49.51%, #FDAE8F 135.35%);
+}
+
+.modal-footer {
+  padding: 0px 0px 80px;
+  background: url(../img/modal-window/modal-back.svg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 1200px) {
+  .modal-footer {
+    padding: 0px 0px 60px;
+  }
+}
+@media (max-width: 1023px) {
+  .modal-footer {
+    padding: 0px 0px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-footer {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .modal-body .text {
+    gap: 0px;
+  }
+  .modal-body .text .title {
+    font-size: 32px;
+  }
+  .modal-body .text .subtitle {
+    font-size: 15px;
+  }
+  .modal-body .inputs {
+    gap: 15px;
+  }
+  .modal-body .inputs .input {
+    width: 200px;
+    height: 30px;
+  }
+  .modal-body .inputs .checkbox-password {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .modal-body .inputs .checkbox-password .checkbox {
+    display: flex;
+    gap: 5px;
+  }
+
+  .modal-footer {
+    display: none;
+  }
+}
+.modal-2 {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  /* Оставаться на месте */
+  z-index: 10;
+  /* Сидеть на вершине */
+  padding-top: 50px;
+  /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0);
+  /* Цвет запасной вариант  */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content-2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #FC4F4F;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header-2 {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+.modal-header-2 .nav-logo {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.modal-body-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 2px 16px;
+  background-color: black;
+}
+.modal-body-2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.modal-body-2 .text .title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  color: white;
+}
+.modal-body-2 .text .subtitle {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+.modal-body-2 .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modal-body-2 .inputs .input {
+  background-color: #224957;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 13px 13px 13px 13px;
+  width: 300px;
+  height: 40px;
+}
+.modal-body-2 .inputs input::-webkit-input-placeholder {
+  color: #B2B2B2;
+}
+.modal-body-2 .inputs .input:focus-visible {
+  outline: none;
+  border: 1px solid #B2B2B2;
+}
+.modal-body-2 .inputs .checkbox-password {
+  display: flex;
+  gap: 32px;
+}
+.modal-body-2 .inputs .checkbox-password .checkbox {
+  display: flex;
+  gap: 7px;
+}
+.modal-body-2 .inputs .checkbox-password .checkbox label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+.modal-body-2 .inputs .checkbox-password .password {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFE927;
+}
+.modal-body-2 .inputs .checkbox-password .password:hover {
+  color: #ffa127;
+}
+.modal-body-2 .inputs .submit {
+  background: linear-gradient(90.54deg, #FDAE8F -38.38%, #FC4F4F 49.51%, #FF7070 135.35%);
+  border: none;
+  padding: 12px 0px;
+  border-radius: 10px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+}
+.modal-body-2 .inputs .submit:hover {
+  background: linear-gradient(90.54deg, #FC4F4F -38.38%, #FF7070 49.51%, #FDAE8F 135.35%);
+}
+
+.modal-footer-2 {
+  padding: 0px 0px 80px;
+  background: url(../img/modal-window/modal-back.svg);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 1200px) {
+  .modal-footer-2 {
+    padding: 0px 0px 60px;
+  }
+}
+@media (max-width: 1023px) {
+  .modal-footer-2 {
+    padding: 0px 0px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-footer-2 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .modal-body-2 .text {
+    gap: 0px;
+  }
+  .modal-body-2 .text .title {
+    font-size: 32px;
+  }
+  .modal-body-2 .text .subtitle {
+    font-size: 15px;
+  }
+  .modal-body-2 .inputs {
+    gap: 15px;
+  }
+  .modal-body-2 .inputs .input {
+    width: 200px;
+    height: 30px;
+  }
+  .modal-body-2 .inputs .checkbox-password {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .modal-body-2 .inputs .checkbox-password .checkbox {
+    display: flex;
+    gap: 5px;
+  }
+
+  .modal-footer-2 {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

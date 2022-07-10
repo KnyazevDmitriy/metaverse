@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     
     <title>Unda.Quest</title>
@@ -27,8 +33,8 @@
                         <li class="list"><a class="link" href="#">Contact</a></li>
                         <li class="list"><a class="link" href="#">Resources</a></li>
                         <div class="sign">
-                            <a class="nav_sign-up" href="">Sign Up</a>
-                            <a class="nav_sign-in" href="">Sign in</a>
+                            <a class="nav_sign-up" id="myBtn" href="#modal">Sign Up</a>
+                            <a class="nav_sign-in" id="myBtn2" href="#modals">Sign in</a>
                         </div>
                     </ul>
 
@@ -38,6 +44,65 @@
                         <span class="bar"></span>
                     </div>
                 </nav>
+            </div>
+            <div id="myModal-1" class="modal-1">
+
+                <!-- Модальное окно Sign Up -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close1">&times;</span>
+                    <a class="nav-logo" href=""><span class="nav-logo-color">UNDA</span>.Quest</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="text">
+                        <h1 class="title">Sign Up</h1>
+                        <p class="subtitle">Sign up and start managing your candidates!</p>
+                    </div>
+                    <form class="inputs" method="post">
+                        <input type="text" name="Username" placeholder="Username" maxlength="25" class="input">
+                        <input type="email" name="email" placeholder="Email" maxlength="30" class="input">
+                        <input type="password" placeholder="Password" minlength="16" maxlength="32" class="input">
+                        <input type="password" placeholder="Confirm Password" minlength="16" maxlength="32"  class="input">
+                        <div class="checkbox-password">
+                            <div class="checkbox">
+                                <input id="remember" type="checkbox" class="input-remember"><label for="remember">Remember me</label>
+                            </div>
+                            <a href="#forgot" class="password">Forgot password</a>
+                        </div>
+                        <input type="submit" class="submit" value="Register">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+            </div>
+
+            <div id="myModal-2" class="modal-2">
+
+                <div class="modal-content-2">
+                  <div class="modal-header-2">
+                    <span class="close2">&times;</span>
+                    <a class="nav-logo" href=""><span class="nav-logo-color">UNDA</span>.Quest</a>
+                  </div>
+                  <div class="modal-body-2">
+                    <div class="text">
+                        <h1 class="title">Sign in</h1>
+                        <p class="subtitle">Sign in and start managing your candidates!</p>
+                    </div>
+                    <form class="inputs" method="post">
+                        <input type="text" name="Username" placeholder="Login" maxlength="25" class="input">
+                        <input type="password" placeholder="Password" minlength="16" maxlength="32" class="input">
+                        <div class="checkbox-password">
+                            <div class="checkbox">
+                                <input id="forgot" type="checkbox" class="input-remember"><label for="forgot">Remember me</label>
+                            </div>
+                            <a href="#forgot" class="password">Forgot password</a>
+                        </div>
+                        <input type="submit" class="submit" value="Login">
+                    </form>
+                  </div>
+                  <div class="modal-footer-2"></div>
+                </div>
             </div>
         </header>
         <main>
@@ -177,7 +242,7 @@
                         <p class="title">100% Open Source</p>
                         <p class="subtitle">Meta is infinitely extensible. Customize it, build upon it, add your apps built with UNDA Framework.</p>
                     </div>
-                    <a href="#" class="section-6-btn-2">GitHub</a>
+                    <a href="https://github.com" target="_blank" class="section-6-btn-2">GitHub</a>
                 </div>
             </section>
         </main>
@@ -259,8 +324,11 @@
                 </div>
             </div>
         </footer>
-    
+
+
     
         <script src="./js/burger.js"></script>
+        <script src="./js/signUp.js"></script>
+        <script src="./js/signIn.js"></script>
 </body>
 </html>

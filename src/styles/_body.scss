@@ -2,8 +2,6 @@ main {
     background-color: $color-black;
     z-index: 1;
     padding-top: 55px;
-    min-width: 320px;
-
 }
 
 .section-1 {
@@ -492,7 +490,7 @@ main {
     
             .buttons {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
 
                 .explore {
                     padding: 10px 15px;
@@ -634,6 +632,7 @@ main {
 
         .text {
             margin: 0 3%;
+
             .title {
                 font-size: 25px;
                 line-height: 40px;
@@ -647,7 +646,7 @@ main {
         align-items: center;
 
         .block {
-            width: 300px;
+            max-width: 300px;
 
             .text {
                 margin: 0 5%;
