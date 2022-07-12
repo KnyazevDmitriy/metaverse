@@ -19,6 +19,7 @@ footer {
                 max-width: 470px;
         
                 .footer-logo {
+                    position: relative;
                     font-family: 'Urbanist';
                     font-style: normal;
                     font-weight: 700;
@@ -29,7 +30,7 @@ footer {
 
                 .footer-logo::before {
                     position: absolute;
-                    left: 120px;
+                    left: -70px;
                     content: url(../img/footer/footer-logo.svg);
                 }
 

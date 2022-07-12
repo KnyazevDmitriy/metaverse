@@ -1227,6 +1227,7 @@ footer .footer .left-side__text {
   max-width: 470px;
 }
 footer .footer .left-side__text .footer-logo {
+  position: relative;
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 700;
@@ -1236,7 +1237,7 @@ footer .footer .left-side__text .footer-logo {
 }
 footer .footer .left-side__text .footer-logo::before {
   position: absolute;
-  left: 120px;
+  left: -70px;
   content: url(../img/footer/footer-logo.svg);
 }
 footer .footer .left-side__text .desc {
