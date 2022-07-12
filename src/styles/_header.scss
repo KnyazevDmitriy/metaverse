@@ -3,6 +3,10 @@
     z-index: 10;
 }
 
+body.active {
+    overflow: hidden;
+}
+
 .nav {
     min-height: 7rem;
 
