@@ -1393,7 +1393,7 @@ footer .footer .right-side .bottom .rights {
     position: relative;
   }
   footer .footer .left-side__text .footer-logo::before {
-    left: 10px;
+    left: -65px;
   }
   footer .footer .left-side__text .desc {
     font-size: 15px;
@@ -1432,7 +1432,7 @@ footer .footer .right-side .bottom .rights {
     position: relative;
   }
   footer .footer .left-side__text .footer-logo::before {
-    left: 10px;
+    left: -65px;
   }
   footer .footer .left-side__text .desc {
     font-size: 15px;
@@ -1473,7 +1473,7 @@ footer .footer .right-side .bottom .rights {
     gap: 24px;
   }
   footer .footer .left-side__text .footer-logo::before {
-    left: 20px;
+    left: -60px;
   }
   footer .footer .left-side__contacts {
     flex-direction: column;
@@ -1520,7 +1520,7 @@ footer .footer .right-side .bottom .rights {
     gap: 24px;
   }
   footer .footer .left-side__text .footer-logo::before {
-    left: 20px;
+    left: -65px;
   }
   footer .footer .left-side__contacts {
     flex-direction: column;
