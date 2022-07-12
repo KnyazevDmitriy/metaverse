@@ -1763,7 +1763,7 @@ footer .footer .right-side .bottom .rights {
   .modal-body .inputs .checkbox-password {
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
   }
   .modal-body .inputs .checkbox-password .checkbox {
     display: flex;
