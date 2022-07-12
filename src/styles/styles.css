@@ -547,7 +547,6 @@ main {
   border-radius: 25px;
   padding: 20px;
   color: #B2B2B2;
-  transition: all 1s;
   cursor: pointer;
 }
 .section-3 .aside details summary {
