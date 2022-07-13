@@ -108,3 +108,23 @@
     left: 155px;
     top: -9px;
 }
+
+.submit {
+    background: linear-gradient(90.54deg, #FDAE8F -38.38%, #FC4F4F 49.51%, #FF7070 135.35%);
+    border: none;
+    padding: 12px 0px;
+    border-radius: 10px;
+
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-white;
+
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: linear-gradient(90.54deg, #FC4F4F -38.38%, #FF7070 49.51%, #FDAE8F 135.35%);
+}
