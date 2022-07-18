@@ -1,7 +1,227 @@
+main {
+    background-color: $color-black;
+}
 
+.section {
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 210px;
+
+    .block-1,
+    .block-2,
+    .block-3 {
+        border: 2px solid $color-primary-red;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .title {
+            color: $color-primary-red;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 75px;
+            text-align: center;
+
+            margin-top: 40px;
+        }
+
+        .subtitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: justify;
+            color: $color-white;
+            margin: 0px 7% 64px;
+        }
+    }
+
+    .block-2 {
+        gap: 35px;
+
+        .content {
+            display: flex;
+            gap: 35px;
+            justify-content: space-around;
+
+            .person {
+                display: flex;
+                flex-direction: column;
+                transition: .5s;
+                align-items: center;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+
+                img {
+                    width: 150px;
+                }
+
+                .text {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: $color-white;
+    
+                    margin: 0px 3%;
+                    padding: 10px 0px 100px;
+    
+                    position: relative;
+                    transition: .5s;
+                    -webkit-transition: .5s;
+                    -moz-transition: .5s;
+                    -ms-transition: .5s;
+                    -o-transition: .5s;
+                }
+            }
+
+            .person:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+    }
+
+    .block-3 {
+        display: flex;
+        margin-bottom: 100px;
+
+        .content-2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 100px;
+
+            img {
+                transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.footer-logo-image {
+    position: absolute;
+}
 
 .img {
     position: absolute;
     top: 14px;
     left: 13px;
+}
+
+@media (max-width: 1200px) {
+    .section {
+        .block-1,
+        .block-2,
+        .block-3 {
+            margin: 0px 3%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        .block-1,
+        .block-2,
+        .block-3 {
+            margin: 0px 3%;
+
+            .content {
+                gap: 5px;
+
+                .person {
+
+                    img {
+                        width: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        .block-1,
+        .block-2,
+        .block-3 {
+            margin: 0px 5%;
+
+            .title {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 24px;
+            }
+
+            .content {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .content-2 {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        .block-1,
+        .block-2,
+        .block-3 {
+            margin: 0px 5%;
+
+            .title {
+                font-size: 30px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            .content {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .content-2 {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+    }
 }
