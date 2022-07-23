@@ -38,7 +38,7 @@
   padding: 10px 25px;
   background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
   border-radius: 10px;
-  color: black;
+  color: rgb(60, 59, 59);
   font-weight: 600;
 }
 
@@ -141,6 +141,30 @@
 
 .submit:hover {
   background: linear-gradient(90.54deg, #FC4F4F -38.38%, #FF7070 49.51%, #FDAE8F 135.35%);
+}
+
+.btn-1 {
+  padding: 15px 55px;
+  background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-1:hover {
+  background: linear-gradient(234.84deg, #FD1C68 15.44%, #FDAE8F 85.65%);
+}
+
+.btn-2 {
+  padding: 15px 55px;
+  border: 1px solid #B2B2B2;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-2:hover {
+  border-color: white;
 }
 
 .header {
@@ -427,12 +451,6 @@ a {
     transition: all 0.3s ease-in-out;
   }
 }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 main {
   background-color: black;
   z-index: 1;
@@ -840,9 +858,14 @@ main {
   .section-1 .text .buttons {
     display: flex;
     justify-content: space-around;
+    gap: none;
   }
   .section-1 .text .buttons .explore {
     padding: 10px 15px;
+    font-size: 15px;
+  }
+  .section-1 .text .buttons .play {
+    font-size: 15px;
   }
   .section-1 .banner {
     display: none;

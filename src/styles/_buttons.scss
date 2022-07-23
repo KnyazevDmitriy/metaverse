@@ -17,7 +17,7 @@
     padding: 10px 25px;
     background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
     border-radius: 10px;
-    color: $color-black;
+    color: rgb(60, 59, 59);
     font-weight: 600;
 }
 
@@ -127,4 +127,28 @@
 
 .submit:hover {
     background: linear-gradient(90.54deg, #FC4F4F -38.38%, #FF7070 49.51%, #FDAE8F 135.35%);
+}
+
+.btn-1 {
+    padding: 15px 55px;
+    background: linear-gradient(234.84deg, #FDAE8F 15.44%, #FD1C68 85.65%);
+    border-radius: 10px;
+    color: $color-white;
+    font-weight: 600;
+}
+
+.btn-1:hover {
+    background: linear-gradient(234.84deg, #FD1C68 15.44%, #FDAE8F  85.65%);
+}
+
+.btn-2 {
+    padding: 15px 55px;
+    border: 1px solid $color-gray;
+    border-radius: 10px;
+    color: $color-white;
+    font-weight: 600;
+}
+
+.btn-2:hover {
+    border-color: $color-white;
 }

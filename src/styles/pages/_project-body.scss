@@ -1,0 +1,230 @@
+main {
+    background-color: $color-black;
+}
+
+.section-1 {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 100px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        width: 70%;
+
+        .title {
+            font-family: 'Urbanist';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            color: $color-white;
+    
+            .color-red {
+                color: $color-primary-red;
+            }
+        }
+
+        .subtitle {
+            font-family: 'Urbanist';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: $color-white;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 35px;
+        }
+    }
+
+    .background {
+        background-image: url(../../img/body/space.svg);
+        height: 350px;
+        background-size: 80%;
+        background-repeat: no-repeat;
+
+        width: 50%;
+    }
+}
+
+.section-2 {
+    padding-bottom: 100px;
+
+    .title {
+        text-align: center;
+
+        color: $color-white;
+        font-family: 'Urbanist';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 88px;
+        padding-bottom: 50px;
+    }
+
+    .cols {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+
+        .cols-2 {
+            display: flex;
+            gap: 30px;
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                align-items: center;
+                width: 270px;
+                transition: all 1s;
+                -webkit-transition: all 1s;
+                -moz-transition: all 1s;
+                -ms-transition: all 1s;
+                -o-transition: all 1s;
+                
+                .image {
+                    width: 100px;
+                }
+    
+                .heading {
+                    font-family: 'Urbanist';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: $color-white;
+                }
+    
+                .subtitle {
+                    font-family: 'Urbanist';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $color-white;
+                }
+            }
+
+            .col:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.footer-logo-image {
+    position: absolute;
+}
+
+.img {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+}
+
+@media (max-width: 1200px) {
+    .section-1,
+    .section-2 {
+        margin: 0px 3%;
+
+        .cols {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-1 {
+
+        .text {
+
+            .title {
+                font-size: 30px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+
+        .background {
+            background-size: 100%;
+        }
+    }
+
+    .section-2 {
+
+        .cols {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+
+        .text {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
+            .buttons {
+                gap: none;
+                justify-content: space-around;
+            }
+        }
+
+        .background {
+            display: none;
+        }
+    }
+
+    .section-2 {
+        
+        .cols {
+
+            .cols-2 {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-1 {
+
+        .text {
+
+            .title {
+                line-height: normal;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .section-2 {
+        
+        .title {
+            line-height: normal;
+            font-size: 40px;
+        }
+    }
+}
