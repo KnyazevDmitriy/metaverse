@@ -305,9 +305,7 @@ footer {
     }
 }
 
-
-
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 
     footer {
     
@@ -317,12 +315,14 @@ footer {
             gap: 50px;
     
             .left-side {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
                 gap: 35px;
                 margin-left: 3%;
                 
                 &__text {
+                    text-align: center;
                     display: flex;
                     flex-direction: column;
                     gap: 24px;
