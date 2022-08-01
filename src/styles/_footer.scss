@@ -31,7 +31,7 @@ footer {
                 .footer-logo::before {
                     position: absolute;
                     left: -70px;
-                    content: url(/src/img/footer/footer-logo.svg);
+                    content: url(../img/footer/footer-logo.svg);
                 }
 
                 .desc {
@@ -68,21 +68,21 @@ footer {
                         position: absolute;
                         top: 14px;
                         left: 14px;
-                        content: url(/src/img/footer/phone.svg);
+                        content: url(../img/footer/phone.svg);
                     }
 
                     .bg-mail::before {
                         position: absolute;
                         top: 14px;
                         left: 14px;
-                        content: url(/src/img/footer/mail.svg);
+                        content: url(../img/footer/mail.svg);
                     }
 
                     .bg-address::before {
                         position: absolute;
                         top: 14px;
                         left: 14px;
-                        content: url(/src/img/footer/MapPin.svg);
+                        content: url(../img/footer/MapPin.svg);
                     }
 
                     legend {

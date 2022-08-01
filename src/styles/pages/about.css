@@ -692,7 +692,7 @@ footer .footer .left-side__text .footer-logo {
 footer .footer .left-side__text .footer-logo::before {
   position: absolute;
   left: -70px;
-  content: url(/src/img/footer/footer-logo.svg);
+  content: url(../img/footer/footer-logo.svg);
 }
 footer .footer .left-side__text .desc {
   font-family: "Urbanist";
@@ -725,19 +725,19 @@ footer .footer .left-side__contacts .contact .bg-phone::before {
   position: absolute;
   top: 14px;
   left: 14px;
-  content: url(/src/img/footer/phone.svg);
+  content: url(../img/footer/phone.svg);
 }
 footer .footer .left-side__contacts .contact .bg-mail::before {
   position: absolute;
   top: 14px;
   left: 14px;
-  content: url(/src/img/footer/mail.svg);
+  content: url(../img/footer/mail.svg);
 }
 footer .footer .left-side__contacts .contact .bg-address::before {
   position: absolute;
   top: 14px;
   left: 14px;
-  content: url(/src/img/footer/MapPin.svg);
+  content: url(../img/footer/MapPin.svg);
 }
 footer .footer .left-side__contacts .contact legend {
   color: #8393AF;
